@@ -7,11 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <GlyphsCore/GSFilterPlugin.h>
+#import <GlyphsCore/GlyphsFilterProtocol.h>
+#import <GlyphsCore/GSGlyphViewControllerProtocol.h>
 
-@interface SuperToolBalance : GSFilterPlugin {
-	CGFloat _firstValue;
-	NSTextField * __unsafe_unretained _firstValueField;
+@interface SuperToolBalance : NSObject <GlyphsFilter> {
 }
-@property (nonatomic, assign) IBOutlet NSTextField* firstValueField;
 @end

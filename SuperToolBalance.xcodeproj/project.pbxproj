@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		F42B7DB025AEF2A9005ED797 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42B7DAF25AEF2A9005ED797 /* Cocoa.framework */; };
 		F42B7DB325AEF2A9005ED797 /* SuperToolBalance-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = F42B7DB225AEF2A9005ED797 /* SuperToolBalance-Prefix.pch */; };
-		F42B7DB625AEF2A9005ED797 /* GlyphsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42B7DB525AEF2A9005ED797 /* GlyphsCore.framework */; };
 		F42B7DB925AEF2A9005ED797 /* SuperToolBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = F42B7DB825AEF2A9005ED797 /* SuperToolBalance.m */; };
 		F42B7DBC25AEF2A9005ED797 /* SuperToolBalanceDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42B7DBA25AEF2A9005ED797 /* SuperToolBalanceDialog.xib */; };
+		F42B7DD025AEFCDB005ED797 /* GSNode+SCNodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F42B7DCE25AEFCDB005ED797 /* GSNode+SCNodeUtils.m */; };
+		F42B7DD425AEFDFA005ED797 /* GlyphsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42B7DD325AEFDFA005ED797 /* GlyphsCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,9 @@
 		F42B7DB825AEF2A9005ED797 /* SuperToolBalance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperToolBalance.m; sourceTree = "<group>"; };
 		F42B7DBB25AEF2A9005ED797 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ../en.lproj/SuperToolBalanceDialog.xib; sourceTree = "<group>"; };
 		F42B7DBD25AEF2A9005ED797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42B7DCE25AEFCDB005ED797 /* GSNode+SCNodeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GSNode+SCNodeUtils.m"; sourceTree = "<group>"; };
+		F42B7DCF25AEFCDB005ED797 /* GSNode+SCNodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GSNode+SCNodeUtils.h"; sourceTree = "<group>"; };
+		F42B7DD325AEFDFA005ED797 /* GlyphsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GlyphsCore.framework; path = "../../../../../../Applications/Glyphs 3.app/Contents/Frameworks/GlyphsCore.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42B7DB625AEF2A9005ED797 /* GlyphsCore.framework in Frameworks */,
+				F42B7DD425AEFDFA005ED797 /* GlyphsCore.framework in Frameworks */,
 				F42B7DB025AEF2A9005ED797 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +62,7 @@
 		F42B7DAE25AEF2A9005ED797 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F42B7DD325AEFDFA005ED797 /* GlyphsCore.framework */,
 				F42B7DAF25AEF2A9005ED797 /* Cocoa.framework */,
 			);
 			name = Frameworks;
@@ -66,6 +71,8 @@
 		F42B7DB125AEF2A9005ED797 /* SuperToolBalance */ = {
 			isa = PBXGroup;
 			children = (
+				F42B7DCF25AEFCDB005ED797 /* GSNode+SCNodeUtils.h */,
+				F42B7DCE25AEFCDB005ED797 /* GSNode+SCNodeUtils.m */,
 				F42B7DB225AEF2A9005ED797 /* SuperToolBalance-Prefix.pch */,
 				F42B7DB725AEF2A9005ED797 /* SuperToolBalance.h */,
 				F42B7DB825AEF2A9005ED797 /* SuperToolBalance.m */,
@@ -153,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42B7DB925AEF2A9005ED797 /* SuperToolBalance.m in Sources */,
+				F42B7DD025AEFCDB005ED797 /* GSNode+SCNodeUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
