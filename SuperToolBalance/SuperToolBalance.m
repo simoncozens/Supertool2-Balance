@@ -12,7 +12,7 @@
 #import <GlyphsCore/GSGlyph.h>
 #import <GlyphsCore/GSLayer.h>
 #import <GlyphsCore/GSPath.h>
-#import "../SCGlyphsLib/GSNode+SCNodeUtils.h"
+#import "GSNode+SCNodeUtils.h"
 
 @implementation SuperToolBalance
 
